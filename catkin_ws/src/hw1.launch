@@ -1,0 +1,6 @@
+<launch>
+	<node pkg='turtlesim' type='turtlesim_node' name='leonardo' output='screen'/>
+	<node pkg='my_package' type='spawner.py' name='turtle_spawner' output='screen'/>
+	<node pkg='my_package' type='listener.py' name='turtle_chaser' output='screen'/>
+	<node pkg='turtlesim' type='turtle_teleop_key' name='controller' output='screen'/>
+</launch>
